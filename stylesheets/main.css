@@ -1,26 +1,161 @@
-body {
-  font-size: 1.6rem;
-  background-color: #f5f5ff;
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
 }
+/*
+  this is seting the text size
+*/
 
 html {
-  font-size: 62.5%;
+  font-size: 60.5%;
 }
 
-h1 {
-  text-align: center;
+/* 
+  this is changing the background color to an off orgen, changs the text size,
+  it changes the space between the text of the lines this is the text disines.
+*/
+
+body {
+  font-size: 1.6rem;
+  background-color: #faf4ef;
+  line-height: 200%;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/*
+  this is changing the h1 the font-size to make it bigger and the color of the text
+  also putting space Between the webpage and text
+*/
+
+nav h1 {
   font-size: 45px;
-  color: #2d627c;
+  color: #f1f1f1;
+  padding: 20px;
+  background-color: #27556d;
 }
 
+nav a {
+  background-color: #27556d;
+  color: #f3f3f3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/*
+  This styles what the boxs around the texts look like 
+*/
+
+div {
+  position: relative;
+  width: 80%;
+  background-color: #faf4ef;
+  margin-bottom: 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px 5px;
+  text-align: center;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*
+  This styles what the links look like when you are about to click on them 
+  theyy will chang colors
+*/
+
+nav a:hover,
+nav a:focus {
+  background-color: #f3f3f3;
+  color: #27556d;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  /*
+    This styles the navgash bare at the top the color, placement
+  */
+}
+nav {
+  background-color: #fa7720;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 75% - 20px;
+}
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+nav li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+}
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 4px;
+  padding: 20px;
+  font-size: 23px;
+  padding: 13px;
+  color: #f1e5e5;
+}
+
+/*
+  This  styles the heading of the webpage color,plaement, and space
+*/
 h2 {
   text-align: center;
   font-size: 45px;
   font-size: center;
-  color: #2d627c;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #1a1a1a;
 }
-
+/*
+  This chages thee sizee of the text
+*/
 P {
   font-size: 2.1rem;
 }
@@ -31,6 +166,51 @@ ul {
 li {
   font-size: 20px;
 }
+/*
+  This gives space in bye the footer so it is not at the edge of the webpage
+*/
 footer {
-  margin-top: 35%;
+  margin-top: 2%;
+}
+
+/*
+  This is a flex box it make you webpage go into column in seed of rows
+  
+*/
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*
+  This is a box shadow it make the box look 3D and make it pop from the background
+*/
+section img {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 20px;
 }

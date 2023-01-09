@@ -12,7 +12,7 @@
       course:Software Development 20s
       teacher:Mr Hardman
       School:Pembina Trails Early College
-      Date:9/28/2022
+      Date:11/28/2022
 
     -->
 
@@ -21,23 +21,22 @@
     -->
 
     <style>
-      div {
-        background-color: #d0e2ec;
-        width: auto;
-        height: 100px;
-        border: radius 5px;
-        padding: 50px 15px;
-        text-align: center;
-      }
-
       .text {
+        display: inline-block;
+        position: relative;
+        left: 40%;
+
         width: 80%;
-        margin: auto;
+
+        margin: 0;
+
+        transform: translateX(-50%);
       }
       #treaty-text {
-        font-size: 1.95em;
+        font-size: 2.95rem;
         margin: auto;
         width: 80%;
+        opacity: 0.8;
       }
 
       span {
@@ -47,33 +46,31 @@
   </head>
   <body>
     <header>
-      <h1>Treaty 1</h1>
+      <nav>
+        <h1>Treaty 1</h1>
+        <ul>
+          <li><a href="index.html">Treaty 1 page 1</a></li>
+          <li><a href="treaty-1.html">Treaty 1 page 2</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <img src="images/Numbered-Treaties-Map.png" width="100%" height="750px" />
     <main>
-      <p class="text">
-        <span>Treaty 1</span> was signed August 1,1871. It was signed in Lower Fort Garry, which is located in St. Andrews, Manitoba.
-        <span>Treaty 1</span> was the first Treaty that was signed that helped establish Canada as the country we know today. The Indigenous
-        people had been living on the land for thousands of years, then Europeans came. Indigenous people had to find a way to live with the
-        European settlers. Their way to live in peace with Europeans was to sign Treaties to help establish boundaries with the Europeans about
-        what land they could build on and take materals from.
-      </p>
-      <br />
-
-      <p id="treaty-text">"Treaty 1 will be in place “as long as the sun shines, the grass grows and the river flow”</p>
-      <br />
-      <br />
-      <img src="images/Numbered-Treaties-Map.png" width="100%" height="750px" />
-
-      <br />
-      <br />
-
-      <img src="images/map_treaty.jpg" width="750px" height="850px" style="float: left" />
-
       <section>
         <h2>What nation are a part of Treaty 1</h2>
-        <br />
-        <br />
         <!-- Mr. Hardman, remember that you gave Ashley permission to do this. -->
+        <img src="images/map_treaty.jpg" width="50%" style="float: left" />
+        <div>
+          <p class="text">
+            <span>Treaty 1</span> was signed August 1,1871. It was signed in Lower Fort Garry, which is located in St. Andrews, Manitoba.
+            <span>Treaty 1</span> was the first Treaty that was signed that helped establish Canada as the country we know today. The
+            Indigenous people had been living on the land for thousands of years, then Europeans came. Indigenous people had to find a way to
+            live with the European settlers. Their way to live in peace with Europeans was to sign Treaties to help establish boundaries with
+            the Europeans about what land they could build on and take materals from.
+          </p>
+        </div>
+
         <div>
           <p>
             This is the land of the Peguis First Nation, Sagkeeng First Nation, Brokenhead Ojibway Nation, Roseau River Anishinaabe First
@@ -81,16 +78,9 @@
             the Anishinaabeg, Cree, Oji-Cree, Dakota, and Dene Peoples, as well as the homeland of the M&#233;tis nation.
           </p>
         </div>
-        <br />
-        <div>
-          <p>
-            Each band was to be provided 160 acres for each family of 5 but could vary. Each person in the family is to receive 3 bonus and a
-            yealy totalling $15 per family of 5
-          </p>
-        </div>
       </section>
     </main>
-    <footer>
+    <footer style="clear: left">
       <ul>
         <li>
           <a
@@ -101,6 +91,13 @@
         </li>
         <li>
           <a href="https://www.rcaanc-cirnac.gc.ca/eng/1360948213124/1544620003549" target="_blank">
+            The Numbered Treaties web page of the Government of Canada website
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2#:~:text=Each%20man%2C%20woman%2C%20and%20child,sale%20of%20liquor%20on%20reserves."
+            target="_blank">
             The Numbered Treaties web page of the Government of Canada website
           </a>
         </li>
