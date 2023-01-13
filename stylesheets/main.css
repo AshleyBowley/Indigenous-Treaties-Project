@@ -17,6 +17,7 @@
 
 html {
   font-size: 60.5%;
+  line-height: 140%;
 }
 
 /* 
@@ -42,11 +43,9 @@ nav h1 {
   font-size: 45px;
   color: #f1f1f1;
   padding: 20px;
-  background-color: #27556d;
 }
 
 nav a {
-  background-color: #27556d;
   color: #f3f3f3;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -84,13 +83,19 @@ nav a:focus {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+  transform: translateY(-4px);
 
   /*
     This styles the navgash bare at the top the color, placement
   */
 }
+
 nav {
-  background-color: #fa7720;
+  background-color: #1a2d66;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -106,7 +111,7 @@ nav {
   -moz-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 75% - 20px;
+  width: 75% - 10%;
 }
 nav ul {
   list-style: none;
