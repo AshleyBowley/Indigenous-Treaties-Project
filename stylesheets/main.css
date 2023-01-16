@@ -87,6 +87,9 @@ nav a:focus {
   width: 300px;
   height: 150px;
   margin: 20px auto;
+  width: 300px;
+  height: 150px;
+  margin: 20px auto;
   -webkit-transition: 500ms linear;
   -o-transition: 500ms linear;
   -moz-transition: 500ms linear;
