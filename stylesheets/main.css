@@ -39,18 +39,205 @@ body {
   this is changing the h1 the font-size to make it bigger and the color of the text
   also putting space Between the webpage and text
 */
+header {
+  position: relative;
+  background-color: #1a2d66;
+}
 
-nav h1 {
+header h1 {
   font-size: 45px;
   color: #f1f1f1;
   padding: 20px;
 }
 
+nav {
+  position: absolute;
+  top: 50%;
+  right: 2.5%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  width: 75% - 10%;
+}
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px;
+  font-size: 20px;
+}
+
 nav a {
-  color: #f3f3f3;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+
+  -webkit-transition: 500ms linear;
+  -o-transition: 500ms linear;
+  -moz-transition: 500ms linear;
+  transition: 500ms linear;
+
+  text-decoration: none;
+  margin: 4px;
+  padding: 20px;
+  font-size: 23px;
+  padding: 13px;
+
+  /* Code below sourced from https://www.kirupa.com/html5/sliding_background_effect_on_link_hover.htm */
+  --initialTextColor: #f1e5e5;
+  --slideTextColor: #1a2d66;
+
+  --initialBgColor: #1a2d66;
+  --slideBgColor: #f1e5e5;
+
+  color: var(--initialTextColor);
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--initialBgColor)),
+    color-stop(50%, var(--initialBgColor)),
+    color-stop(50%, var(--slideBgColor)),
+    to(var(--slideBgColor))
+  );
+
+  background-image: -webkit-linear-gradient(
+    left,
+    var(--initialBgColor) 0%,
+    var(--initialBgColor) 50%,
+    var(--slideBgColor) 50%,
+    var(--slideBgColor) 100%
+  );
+
+  background-image: -moz-linear-gradient(
+    left,
+    var(--initialBgColor) 0%,
+    var(--initialBgColor) 50%,
+    var(--slideBgColor) 50%,
+    var(--slideBgColor) 100%
+  );
+
+  background-image: -o-linear-gradient(
+    left,
+    var(--initialBgColor) 0%,
+    var(--initialBgColor) 50%,
+    var(--slideBgColor) 50%,
+    var(--slideBgColor) 100%
+  );
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--initialBgColor)),
+    color-stop(50%, var(--initialBgColor)),
+    color-stop(50%, var(--slideBgColor)),
+    to(var(--slideBgColor))
+  );
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--initialBgColor)),
+    color-stop(50%, var(--initialBgColor)),
+    color-stop(50%, var(--slideBgColor)),
+    to(var(--slideBgColor))
+  );
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--initialBgColor)),
+    color-stop(50%, var(--initialBgColor)),
+    color-stop(50%, var(--slideBgColor)),
+    to(var(--slideBgColor))
+  );
+
+  background-image: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(var(--initialBgColor)),
+    color-stop(50%, var(--initialBgColor)),
+    color-stop(50%, var(--slideBgColor)),
+    to(var(--slideBgColor))
+  );
+
+  background-image: linear-gradient(
+    90deg,
+    var(--initialBgColor) 0%,
+    var(--initialBgColor) 50%,
+    var(--slideBgColor) 50%,
+    var(--slideBgColor) 100%
+  );
+
+  -webkit-background-size: 200% 200%;
+  -moz-background-size: 200%;
+  -o-background-size: 200%;
+  background-size: 200%;
+
+  -webkit-transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63), color 0.2s linear;
+  -o-transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63), color 0.2s linear;
+  -moz-transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63), color 0.2s linear;
+  transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63), color 0.2s linear;
+
+  -webkit-transition-delay: 0s, 0.15s;
+  -moz-transition-delay: 0s, 0.15s;
+  -o-transition-delay: 0s, 0.15s;
+  transition-delay: 0s, 0.15s;
+}
+
+/*
+  This styles what the links look like when you are about to click on them 
+  theyy will chang colors
+*/
+
+nav a:hover,
+nav a:focus {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  /* Code below sourced from https://www.kirupa.com/html5/sliding_background_effect_on_link_hover.htm */
+  color: var(--slideTextColor);
+  cursor: pointer;
+  background-position: -100% 100%;
+
+  /*
+    This styles the navgash bare at the top the color, placement
+  */
 }
 
 /*
@@ -70,86 +257,6 @@ div {
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-/*
-  This styles what the links look like when you are about to click on them 
-  theyy will chang colors
-*/
-
-nav a:hover,
-nav a:focus {
-  background-color: #f3f3f3;
-  color: #1a2d66;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  width: 300px;
-  height: 150px;
-  margin: 20px auto;
-  width: 300px;
-  height: 150px;
-  margin: 20px auto;
-  -webkit-transition: 500ms linear;
-  -o-transition: 500ms linear;
-  -moz-transition: 500ms linear;
-  transition: 500ms linear;
-  /*
-    This styles the navgash bare at the top the color, placement
-  */
-}
-
-nav {
-  background-color: #1a2d66;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 75% - 10%;
-}
-nav ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
-nav li {
-  display: inline-block;
-  margin: 10px;
-  font-size: 20px;
-}
-nav ul {
-  list-style: none;
-}
-nav li {
-  display: inline-block;
-  margin: 10px;
-  font-size: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  margin: 4px;
-  padding: 20px;
-  font-size: 23px;
-  padding: 13px;
-  color: #f1e5e5;
 }
 
 /*
