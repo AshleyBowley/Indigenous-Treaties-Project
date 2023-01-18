@@ -18,7 +18,6 @@
 
 html {
   font-size: 60.5%;
-  line-height: 140%;
 }
 
 /* 
@@ -188,6 +187,56 @@ nav a {
 
   background-image: -webkit-gradient(
     linear,
+    left top,
+    right top,
+    from(var(--initialBgColor)),
+    color-stop(50%, var(--initialBgColor)),
+    color-stop(50%, var(--slideBgColor)),
+    to(var(--slideBgColor))
+  );
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--initialBgColor)),
+    color-stop(50%, var(--initialBgColor)),
+    color-stop(50%, var(--slideBgColor)),
+    to(var(--slideBgColor))
+  );
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--initialBgColor)),
+    color-stop(50%, var(--initialBgColor)),
+    color-stop(50%, var(--slideBgColor)),
+    to(var(--slideBgColor))
+  );
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--initialBgColor)),
+    color-stop(50%, var(--initialBgColor)),
+    color-stop(50%, var(--slideBgColor)),
+    to(var(--slideBgColor))
+  );
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--initialBgColor)),
+    color-stop(50%, var(--initialBgColor)),
+    color-stop(50%, var(--slideBgColor)),
+    to(var(--slideBgColor))
+  );
+
+  background-image: -webkit-gradient(
+    linear,
     left top, right top,
     from(var(--initialBgColor)),
     color-stop(50%, var(--initialBgColor)),
@@ -240,24 +289,17 @@ nav a:focus {
   */
 }
 
+.first-images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 5%;
+}
+
 /*
   This styles what the boxs around the texts look like 
 */
-
-div {
-  position: relative;
-  width: 80%;
-  background-color: #faf4ef;
-  margin-bottom: 20px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  padding: 10px 5px;
-  text-align: center;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
 
 /*
   This  styles the heading of the webpage color,plaement, and space
@@ -270,11 +312,21 @@ h2 {
   margin-bottom: 50px;
   color: #1a1a1a;
 }
-/*
-  This chages thee sizee of the text
-*/
-P {
+
+p {
+  position: relative;
+  width: 80%;
+  background-color: #faf4ef;
+  margin-bottom: 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px 5px;
+  text-align: center;
   font-size: 2.1rem;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 ul {
   list-style-type: none;
