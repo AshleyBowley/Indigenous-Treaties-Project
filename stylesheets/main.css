@@ -112,7 +112,9 @@ nav a {
   font-size: 23px;
   padding: 13px;
 
-  /* Code below sourced from https://www.kirupa.com/html5/sliding_background_effect_on_link_hover.htm */
+  /* Code below sourced from https://www.kirupa.com/html5/sliding_background_effect_on_link_hover.htm 
+    this styles the nave to make it get hilited when you hover over it
+  */
   --initialTextColor: #f1e5e5;
   --slideTextColor: #1a2d66;
 
@@ -155,89 +157,11 @@ nav a {
     var(--slideBgColor) 100%
   );
 
+  /* autoprefixer: off */
   background-image: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(var(--initialBgColor)),
-    color-stop(50%, var(--initialBgColor)),
-    color-stop(50%, var(--slideBgColor)),
-    to(var(--slideBgColor))
-  );
-
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(var(--initialBgColor)),
-    color-stop(50%, var(--initialBgColor)),
-    color-stop(50%, var(--slideBgColor)),
-    to(var(--slideBgColor))
-  );
-
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(var(--initialBgColor)),
-    color-stop(50%, var(--initialBgColor)),
-    color-stop(50%, var(--slideBgColor)),
-    to(var(--slideBgColor))
-  );
-
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(var(--initialBgColor)),
-    color-stop(50%, var(--initialBgColor)),
-    color-stop(50%, var(--slideBgColor)),
-    to(var(--slideBgColor))
-  );
-
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(var(--initialBgColor)),
-    color-stop(50%, var(--initialBgColor)),
-    color-stop(50%, var(--slideBgColor)),
-    to(var(--slideBgColor))
-  );
-
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(var(--initialBgColor)),
-    color-stop(50%, var(--initialBgColor)),
-    color-stop(50%, var(--slideBgColor)),
-    to(var(--slideBgColor))
-  );
-
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(var(--initialBgColor)),
-    color-stop(50%, var(--initialBgColor)),
-    color-stop(50%, var(--slideBgColor)),
-    to(var(--slideBgColor))
-  );
-
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(var(--initialBgColor)),
-    color-stop(50%, var(--initialBgColor)),
-    color-stop(50%, var(--slideBgColor)),
-    to(var(--slideBgColor))
-  );
-
-  background-image: -webkit-gradient(
-    linear,
-    left top, right top,
     from(var(--initialBgColor)),
     color-stop(50%, var(--initialBgColor)),
     color-stop(50%, var(--slideBgColor)),
